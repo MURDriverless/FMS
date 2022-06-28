@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+    <class name="diagnostic_aggregator/LidarAnalyzer" type="diagnostic_aggregator::LidarAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+      <description>
+        LiDAR Analyzer
+      </description>
+    </class>
+</library>

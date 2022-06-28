@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import sensors.controls as CONTROLS
+import rospy
+
+if __name__ == '__main__':
+    rospy.init_node('controls_driver')
+
+    pub_period = rospy.get_param("~diagnostic_period",1.0)
+    rate = rospy.Rate(pub_period)
+
+    controls = CONTROLS.ControlDriver()
+
+    while not rospy.is_shutdown():
+        controls.runOnce()
+        rate.sleep()

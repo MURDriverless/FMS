@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+    <class name="diagnostic_aggregator/PerceptionAnalyzer" type="diagnostic_aggregator::PerceptionAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+      <description>
+        Perception Analyzer
+      </description>
+    </class>
+</library>

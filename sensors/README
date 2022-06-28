@@ -1,0 +1,16 @@
+Package name: sensors
+Summary: mock sensor drivers to demonstrate fault management system
+
+Description:
+The sensor drivers utilises the ROS diagnostic updater to update the current state of the sensor.
+
+Ideally, for each loop, the sensor driver should update the operational status of the sensor to either OK, WARN or ERROR based on some error checking 
+
+Analyzer function which is actually the Fault Management System will read these updates and evaluate the severity of them and determine whether the emergency brakes need to be applied or not
+--------------------------------------------------------------------------
+SETUP INSTRUCTIONS
+
+1. Create ROS package sensors with dependencies on rospy std_msgs diagnostic_updater
+2. Create a scripts folder,
+3. Create a setup.py file
+4. Create a folder src/<package_name> and use this to store all the driver codes

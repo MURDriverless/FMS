@@ -1,0 +1,30 @@
+<launch>
+    <arg name="period" value="1.0" />
+
+    <node pkg="sensors" type="gps_driver" name="gps_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="sensors" type="camera_driver" name="camera_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="sensors" type="lidar_driver" name="lidar_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="sensors" type="slam_driver" name="slam_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="sensors" type="controls_driver" name="controls_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="sensors" type="perception_driver" name="perception_driver">
+        <param name="diagnostic_period" value="$(arg period)" />
+    </node>
+
+    <node pkg="rqt_runtime_monitor" type="rqt_runtime_monitor" name="runtime_monitor" />
+</launch>
+  

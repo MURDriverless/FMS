@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import sensors.gps as GPS
+import sensors.slam as SLAM
+import rospy
+
+if __name__ == '__main__':
+    rospy.init_node('slam_driver')
+
+    pub_period = rospy.get_param("~diagnostic_period",1.0)
+    rate = rospy.Rate(pub_period)
+    
+    slam = SLAM.SLAMDriver()
+    
+    while not rospy.is_shutdown():
+        slam.runOnce()
+        rate.sleep()

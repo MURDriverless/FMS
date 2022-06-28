@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+import fms_ui.fms_ui as fms_ui
+
+if __name__ == '__main__':
+    ui = fms_ui.FMSUI()
+    ui.mainloop()

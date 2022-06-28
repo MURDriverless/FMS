@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+  <class name="diagnostic_aggregator/GPSAnalyzer" type="diagnostic_aggregator::GPSAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+    <description>
+      GPS Analyzer
+    </description>
+  </class>
+</library>

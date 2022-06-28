@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+    <class name="diagnostic_aggregator/CameraAnalyzer" type="diagnostic_aggregator::CameraAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+      <description>
+        Camera Analyzer
+      </description>
+    </class>
+</library>

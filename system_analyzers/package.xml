@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>system_analyzers</name>
+  <version>0.0.0</version>
+  <description>The system_analyzers package</description>
+
+  <maintainer email="hari@todo.todo">hari</maintainer>
+
+  <license>TODO</license>
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>pluginlib</depend>
+  <depend>xmlrpcpp</depend>
+  <depend>roscpp</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>diagnostic_aggregator</depend>
+  <depend>mur_common</depend>
+
+  <export>
+    <!-- add plugin xml here -->
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins.xml"/>
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins/slam_analyzer_plugin.xml"/>
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins/controls_analyzer_plugin.xml"/>
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins/perception_analyzer_plugin.xml"/>
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins/camera_analyzer_plugin.xml"/>
+    <diagnostic_aggregator plugin="${prefix}/analyzer_plugins/lidar_analyzer_plugin.xml"/>
+  </export>
+</package>

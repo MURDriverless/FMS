@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+    <class name="diagnostic_aggregator/SLAMAnalyzer" type="diagnostic_aggregator::SLAMAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+      <description>
+        SLAM Analyzer
+      </description>
+    </class>
+</library>

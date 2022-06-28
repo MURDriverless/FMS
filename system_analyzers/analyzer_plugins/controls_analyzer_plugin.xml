@@ -1,0 +1,7 @@
+<library path="lib/libsystem_analyzers">
+    <class name="diagnostic_aggregator/ControlsAnalyzer" type="diagnostic_aggregator::ControlsAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+      <description>
+        Controls Analyzer
+      </description>
+    </class>
+</library>

@@ -1,0 +1,35 @@
+pub_rate: 2.0
+# path: Robot
+analyzers:
+  sensors:
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: Sensors
+    analyzers:
+      gps:
+        type: diagnostic_aggregator/GPSAnalyzer
+        path: GPS
+        find_and_remove_prefix: gps_driver
+      camera:
+        type: diagnostic_aggregator/CameraAnalyzer
+        path: CAMERA
+        find_and_remove_prefix: camera_driver
+      lidar:
+        type: diagnostic_aggregator/LidarAnalyzer
+        path: LiDAR
+        find_and_remove_prefix: lidar_driver
+  software:
+    type: diagnostic_aggregator/AnalyzerGroup
+    path: Software
+    analyzers:
+      slam:
+        type: diagnostic_aggregator/SLAMAnalyzer
+        path: SLAM
+        find_and_remove_prefix: slam_driver
+      control:
+        type: diagnostic_aggregator/ControlsAnalyzer
+        path: Controls
+        find_and_remove_prefix: controls_driver
+      perception:
+        type: diagnostic_aggregator/PerceptionAnalyzer
+        path: Perception
+        find_and_remove_prefix: perception_driver
