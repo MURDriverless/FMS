@@ -1,0 +1,8 @@
+#!/bin/bash
+
+clear
+
+cd MUR
+cd mursim
+source devel/setup.bash
+rosrun fms_ui fms_ui
